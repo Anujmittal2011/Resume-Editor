@@ -36,18 +36,7 @@ FastAPI (Python)
 
 In-memory resume storage (mock only)
 
-📁 Project Structure
 
-resume-editor/
-├── backend/               # FastAPI server
-│   └── main.py
-├── frontend/              # React client
-│   ├── src/
-│   │   ├── components/    # Resume sections (Education, Experience...)
-│   │   ├── api/           # API handlers (mock + real)
-│   │   └── App.jsx
-├── README.md              # You are here
-├── requirements.txt       # Python backend dependencies
 
 ⚙️ Installation
 
@@ -58,19 +47,18 @@ cd resume-editor
 
 2. Backend Setup (FastAPI)
 
-cd backend
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-pip install -r ../requirements.txt
-uvicorn main:app --reload
+1. cd backend       
+2. python -m venv venv        
+3. pip install -r ../requirements.txt       
+4. uvicorn main:app --reload
 
 Server will start at: http://localhost:8000
 
 3. Frontend Setup (React + Vite)
 
-cd ../frontend
-npm install
-npm run dev
+1. cd frontend           
+2. npm install         
+3. npm start        
 
 Frontend runs at: http://localhost:5173
 
